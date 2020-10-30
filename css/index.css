@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	/* border: 0; */
+	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -26,17 +26,12 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 
 
-/* code added for sprint challenge below */
+/* code added for home page sprint challenge below */
 * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 * {
     width:100%;
-}
-.top_bar {
-    background-color: black;
-    width:100%;
-    height:8vh;
 }
 
 .header_content {
@@ -57,13 +52,13 @@ time, mark, audio, video {
     text-align: center;
     text-decoration: none;
     color:black;
-    font-size: .75rem;
+    font-size: 0.45rem;
     margin-top: 5%;
 }
 
 .header_img_container {
-    height:15vh;
-    margin: 4% 0;
+    width:90%;
+    margin: 4% auto 2%;
 }
 
 .header_img_container img {
@@ -101,7 +96,84 @@ time, mark, audio, video {
     background-color: dodgerblue;
 }
 
+.container {
+    padding: 0 5%;
+}
 
+/* about page code for challenge */
+.about_content h1{
+    font-size: .75rem;
+    margin-bottom: 1%;
+}
+
+.about_content p{
+font-size: .55rem;
+}
+.about_content {
+    margin: 0 auto;
+    width:100%;
+    margin-bottom: 3%;
+    padding: 1%;
+    padding-bottom: 2%;
+    border-bottom: 1px dotted black;
+}
+
+.learn_more_container_main {
+    display:flex;
+    width:100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.learn_more_container_sub {
+    width:48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 3%;
+    padding-bottom: 2%;
+    border-bottom: 1px dotted black;
+
+}
+
+.learn_more_container_sub h3{
+    font-size: .75rem;
+    margin-top: 2%;
+}
+
+.learn_more_container_sub p{
+    font-size: .60rem;
+}
+
+.learn_more_container_sub a{
+
+    text-decoration: none;
+    color:black;
+    border-radius: 5px;
+    border:2px solid black;
+    width:35%;
+    padding:2.5% 2%;
+    font-size: .6rem;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.about_last{
+    width:100%;
+    margin:4% auto;
+}
+
+.about_last h3{
+font-size: .75rem;
+}
+
+.about_last p{
+    font-size: .5rem;
+    }
+
+
+    
 /* existing code below */
 article, aside, details, figcaption, figure, 
 footer, hgroup, menu, section {
@@ -146,7 +218,7 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 100%; /* changed to 100% for variable screen sizes */
     margin: 0 auto;
 }
 
@@ -211,12 +283,12 @@ footer {
 }
 
 footer nav {
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 1rem 4%;
+    font-size: .5rem;
 }
 
 footer nav a {
